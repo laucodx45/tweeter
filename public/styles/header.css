@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: orangered;
+  height: 520px;
+  padding-top: 7.8em;
+  background-image: url(/images/arches.png);
+}
+
+header .avatar {
+  display: flex;
+  justify-content: center;
+}
+
+header .user {
+  display: flex;
+  justify-content: center;
+}
+
+header .user h2 {
+  margin: 0;
+}

@@ -1,9 +1,10 @@
 nav {
   display: flex;
-  justify-self: ;
   background-color: #4056A1;
   height: 120px;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
 }
 
 nav span.left{
