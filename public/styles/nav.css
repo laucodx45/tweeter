@@ -1,0 +1,35 @@
+nav {
+  display: flex;
+  justify-self: ;
+  background-color: #4056A1;
+  height: 120px;
+  justify-content: space-between;
+}
+
+nav span.left{
+  color: #FFFFFF;
+  margin-left: 1.5em;
+  margin-top: 1em;
+  font-size: 2em;
+  font-family: 'Bungee', sans-serif;
+}
+
+nav p {
+  margin-bottom: 0px;
+}
+
+nav span.right {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+  color: #FFFFFF;
+  margin-right: 1.5em;
+  margin-bottom: 18px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+#arrow {
+  display: flex;
+  align-self: center;
+  color: red;
+}
