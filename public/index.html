@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -27,7 +28,6 @@
   </head>
 
   <body>
-    
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="left">tweeter</span>
@@ -36,6 +36,7 @@
         <i id="arrow" class="fa-solid fa-angles-down"></i>
       </span>
     </nav>
+    <!-- nav bar -->
     <header>
       <div class="avatar">
           <img src="/images/profile-hex.png"> 
@@ -44,11 +45,20 @@
           <h2>Cody Lau</h2>
       </div>
     </header>
-
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <h1>Temp paragraphs</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolor non quaerat sint neque, adipisci expedita officia aliquid ratione impedit suscipit aliquam dolore quam ipsa recusandae illo sapiente quibusdam itaque!</p>
+      <section class="new-tweet">
+        <form method="POST" action="/tweets">
+          <div class="box-1">
+            <label for="tweet-text">What are you humming about?</label>
+            <textarea name="text" id="tweet-text"></textarea>
+          </div>
+          <div class="box-2">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>

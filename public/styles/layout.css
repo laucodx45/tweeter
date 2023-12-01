@@ -13,6 +13,7 @@ html {
 /*
  * Global layout stuff
  */
+ 
 nav {
   font-family: 'Bungee', sans-serif;
 }
@@ -27,7 +28,10 @@ body {
   font-family: 'Source Sans 3', sans-serif;
 }
 
-main .container {
+main {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
   width: 90%;
   background-color: #f4f1ec;
 }

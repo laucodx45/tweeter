@@ -1,0 +1,44 @@
+main .new-tweet {
+  padding: 20px;
+}
+
+.new-tweet .box-1 textarea {
+  padding-top: 10px;
+  background-color: #f4f1ec;
+  border-top: 0cm;
+  border-left: 0cm;
+  border-right: 0cm;
+  border-width: 5px;
+  font-family: 'Bangee', sans-serif;
+  outline: none;
+}
+
+main .new-tweet .box-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+main .new-tweet .box-1 label {
+  font-family: 'Bangee', sans-serif;
+  font-weight: 600;
+}
+
+main .new-tweet .box-2 {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main .new-tweet .box-2 button {
+  font-family: 'Bungee', sans-serif;
+  background-color: #4056A1;
+  color: #f4f1ec;
+  padding: 5px;
+}
+
+main .new-tweet .box-2 .counter {
+  font-family: 'Bungee', sans-serif;
+  color: grey;
+  font-weight: 500;
+}
