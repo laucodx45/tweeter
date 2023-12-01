@@ -3,6 +3,7 @@ header {
   flex-direction: column;
   background-color: orangered;
   height: 520px;
+  width: 100%;
   padding-top: 7.8em;
   background-image: url(/images/arches.png);
 }
