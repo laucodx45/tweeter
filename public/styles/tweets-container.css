@@ -1,0 +1,99 @@
+article {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  border-style: solid;
+  border-width: thick;
+  font-family: 'Bangee', sans-serif;
+}
+
+article .box-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+article .user-info {
+  display: flex;
+  flex-direction: row;
+}
+
+article .avatar img {
+  max-width: 54px;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+article .user-name {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+article .user-tag {
+  padding-top: 10px;
+  padding-right: 10px;
+  color: #C5CBE3;
+  font-family: 'Bangee', sans-serif;
+}
+
+
+article .tweet-text {
+  padding-top: 10px;
+  margin-left: 12px;
+  margin-right: 12px;
+  background-color: #f4f1ec;
+  border-style: solid;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-top-style: hidden;
+  border-width: 5px;
+  font-family: 'Bangee', sans-serif;
+  outline: none;
+}
+
+article .tweet-text p {
+  margin: 15px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+article footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+article footer .posting-date {
+  padding-left: 36px;
+  font-size: medium;
+}
+
+article footer .icons {
+  padding-top: 10px;
+  padding-right: 36px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#flag {
+  padding-right : 5px;
+}
+
+#retweet {
+  padding-left : 5px;
+  padding-right : 5px;
+}
+
+article:hover {
+  box-shadow: 10px 10px lightblue;
+}
+
+#flag:hover {
+  color: red;
+}
+#retweet:hover {
+  color: red;
+}
+#heart:hover {
+  color: red;
+}
