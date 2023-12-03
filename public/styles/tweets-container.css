@@ -4,7 +4,8 @@ article {
   margin-top: 40px;
   border-style: solid;
   border-width: thick;
-  font-family: 'Bangee', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
 }
 
 article .box-1 {
@@ -33,7 +34,7 @@ article .user-tag {
   padding-top: 10px;
   padding-right: 10px;
   color: #C5CBE3;
-  font-family: 'Bangee', sans-serif;
+  font-weight: 600;
 }
 
 
@@ -47,8 +48,8 @@ article .tweet-text {
   border-right-style: hidden;
   border-top-style: hidden;
   border-width: 5px;
-  font-family: 'Bangee', sans-serif;
-  outline: none;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 600;
 }
 
 article .tweet-text p {
