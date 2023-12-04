@@ -37,7 +37,6 @@ article .user-tag {
   font-weight: 600;
 }
 
-
 article .tweet-text {
   padding-top: 10px;
   margin-left: 12px;
@@ -92,9 +91,11 @@ article:hover {
 #flag:hover {
   color: red;
 }
+
 #retweet:hover {
   color: red;
 }
+
 #heart:hover {
   color: red;
 }
