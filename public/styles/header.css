@@ -1,10 +1,10 @@
 header {
   display: flex;
   flex-direction: column;
-  background-color: orangered;
+  background-color: #D89820;
   height: 520px;
   width: 100%;
-  padding-top: 7.8em;
+  padding-top: 178px;
   background-image: url(/images/arches.png);
 }
 
@@ -19,5 +19,6 @@ header .user {
 }
 
 header .user h2 {
-  margin: 0;
+  margin: 10px;
+  color: #f4f1ec;
 }
