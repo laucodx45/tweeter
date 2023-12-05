@@ -20,7 +20,7 @@ article .user-info {
 
 article .avatar img {
   max-width: 54px;
-  border-radius: 50%;
+  border-radius: 30%;
   margin-left: 30px;
   margin-top: 15px;
 }
