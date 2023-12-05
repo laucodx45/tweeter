@@ -28,7 +28,6 @@
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
-
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
@@ -51,7 +50,7 @@
     <main class="container">
       <!-- new tweet section -->
       <section class="new-tweet">
-        <form method="POST" action="/tweets">
+        <form id="submit-tweet-form" method="POST" action="/tweets">
           <div class="box-1">
             <label for="tweet-text">What are you humming about?</label>
             <textarea name="text" id="tweet-text"></textarea>
