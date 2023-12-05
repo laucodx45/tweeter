@@ -18,7 +18,9 @@ header .user {
   justify-content: center;
 }
 
-header .user h2 {
+header .user p {
   margin: 10px;
   color: #f4f1ec;
+  font-size: 30px;
+  font-weight: bold;
 }
