@@ -36,6 +36,15 @@ const createTweetElement = (object) => {
 };
 
 const renderTweets = (array) => {
+
+  // check if it's a new tweet object
+  if (!Array.isArray(array)) {
+    const tweetData = array;
+    $('#tweets-container').after(createTweetElement(tweetData));
+    return;
+  }
+
+  // This renders the entire tweets database
   for (const tweetData of array) {
     $('#tweets-container').after(createTweetElement(tweetData));
   }
@@ -47,8 +56,16 @@ const loadTweet = () => {
   });
 };
 
+const loadNewTweet = () => {
+  $.getJSON("/tweets", function(data) {
+    const lastIndex  = data.length - 1;
+    console.log(data[lastIndex]);
+    renderTweets(data[lastIndex]);
+  });
+};
+
 $(document).ready(function() {
-  
+
   loadTweet();
 
   $("#submit-tweet-form").on("submit", function(event) {
@@ -67,7 +84,10 @@ $(document).ready(function() {
       return;
     }
 
-    $.post("/tweets", $tweet);
-
+    $.post("/tweets", $tweet).then(() => {
+      $("#tweet-text").val('');
+      loadNewTweet();
+    });
+    
   });
 });
