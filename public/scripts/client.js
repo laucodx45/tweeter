@@ -48,12 +48,26 @@ const loadTweet = () => {
 };
 
 $(document).ready(function() {
-  // renderTweets(data);
+  
   loadTweet();
 
   $("#submit-tweet-form").on("submit", function(event) {
     event.preventDefault();
     const $tweet = $(this).serialize();
+
+    const slicedTweet = decodeURIComponent($tweet.slice(5));
+    
+    if (slicedTweet.length === 0 || slicedTweet === null) {
+      alert('Tweet content is not present');
+      return;
+    }
+    
+    if (slicedTweet.length > 140) {
+      alert('Please limit tweet to 140 characters');
+      return;
+    }
+
     $.post("/tweets", $tweet);
+
   });
 });

@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  console.log('doc ready! callback was successful');
 
   $('#tweet-text').on('input', function() {
     let initialCount = 140;
