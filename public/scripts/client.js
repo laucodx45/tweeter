@@ -1,3 +1,9 @@
+const escape = function(str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
+
 /**
  * takes in a tweet object and is responsible for returning a tweet <article> element containing the entire HTML structure of the tweet
  * @param {*} object
@@ -20,7 +26,7 @@ const createTweetElement = (object) => {
   </div>
 </div>
 <div class="tweet-text">
-  <p>${object.content.text}</p>
+  <p>${escape(object.content.text)}</p>
 </div>
 <footer>
   <div class="posting-date">
@@ -59,7 +65,6 @@ const loadTweet = () => {
 const loadNewTweet = () => {
   $.getJSON("/tweets", function(data) {
     const lastIndex  = data.length - 1;
-    console.log(data[lastIndex]);
     renderTweets(data[lastIndex]);
   });
 };
