@@ -9,7 +9,6 @@ const escape = function(str) {
  * @param {*} object
  * @output returns entire HTML structure of the tweet
  */
-
 const createTweetElement = (object) => {
   let $tweet = $(`<article>
   <div class="box-1">
