@@ -95,8 +95,11 @@ $(document).ready(function() {
       return;
     }
 
-    $.post("/tweets", $tweet).then(() => {
+    $.post("/tweets", $tweet).then(function() {
+      // is this bad practice, not using .find?
+      
       $("#tweet-text").val('');
+      $('.counter').text(140);
       loadNewTweet();
     });
     
