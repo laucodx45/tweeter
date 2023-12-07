@@ -1,3 +1,6 @@
+// TODO:
+// 1. There's a bug with the counter, after tweeting, it stays at the word count of the previous tweet
+
 const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -69,22 +72,26 @@ const loadNewTweet = () => {
 };
 
 $(document).ready(function() {
+  $('.error-message').hide();
 
   loadTweet();
 
   $("#submit-tweet-form").on("submit", function(event) {
     event.preventDefault();
+    $('.error-message').slideUp(200);
     const $tweet = $(this).serialize();
 
     const slicedTweet = decodeURIComponent($tweet.slice(5));
     
     if (slicedTweet.length === 0 || slicedTweet === null) {
-      alert('Tweet content is not present');
+      // alert('Tweet content is not present');
+      $(this).parents('.container').find('#empty-tweet-error').show(200);
       return;
     }
     
     if (slicedTweet.length > 140) {
-      alert('Please limit tweet to 140 characters');
+      // alert('Please limit tweet to 140 characters');
+      $(this).parents('.container').find('#overlimit-error').show(200);
       return;
     }
 

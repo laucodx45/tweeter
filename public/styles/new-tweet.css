@@ -45,3 +45,33 @@ main .new-tweet .box-2 .counter {
   color: #535149;
   font-weight: 500;
 }
+
+.error-message p {
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#overlimit-error {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  border-style: solid;
+  border-color: red;
+  border-width: medium;
+  color: red;
+}
+
+#empty-tweet-error {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  padding: 10px;
+  padding-left: 20px;
+  border-style: solid;
+  border-color: red;
+  border-width: medium;
+  color: red;
+}

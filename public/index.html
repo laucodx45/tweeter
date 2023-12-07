@@ -52,6 +52,16 @@
     </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <div id="empty-tweet-error" class="error-message">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p>Oops! Your tweet is empty. Please add some text before posting</p>
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </div>
+      <div id="overlimit-error" class="error-message">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <p>Please limit tweet to 140 characters</p>
+        <i class="fa-solid fa-triangle-exclamation"></i>
+      </div>
       <!-- new tweet section -->
       <section class="new-tweet">
         <form id="submit-tweet-form" method="POST" action="/tweets">
