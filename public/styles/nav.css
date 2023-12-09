@@ -34,3 +34,18 @@ nav span.right {
   align-self: center;
   color: red;
 }
+
+/* Problem, the nav bar is transparent and the logo follows when you scroll down */
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: transparent;
+  }
+
+  nav span.left{
+    padding-right: 10%;
+  }
+
+  nav span.right {
+    font-size: 24px;
+  }
+}
