@@ -35,10 +35,10 @@ nav span.right {
   color: red;
 }
 
-/* Problem, the nav bar is transparent and the logo follows when you scroll down */
 @media only screen and (max-width: 768px) {
   nav {
     background-color: transparent;
+    position:absolute;
   }
 
   nav span.left{

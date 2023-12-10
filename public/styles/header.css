@@ -24,3 +24,14 @@ header .user p {
   font-size: 30px;
   font-weight: bold;
 }
+
+@media only screen and (min-width: 1024px) {
+  header {
+    flex-shrink: 1.1;
+    margin: 2em;
+    margin-top: 25vh;
+    height: 15em;
+    padding-top: 36px;
+    width: 35em;
+  }
+}

@@ -33,8 +33,24 @@ main {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 90%;
+  width: 100%;
   background-color: #f4f1ec;
+}
+
+.all-tweets {
+  width: 90%;
+  margin: auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  main .all-tweets {
+    margin: 25vh 5vh 5vh 15vh;
+  }
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

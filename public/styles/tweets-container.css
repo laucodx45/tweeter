@@ -36,7 +36,7 @@ article .user-tag {
   color: #C5CBE3;
   font-weight: 300;
 }
-
+/* wrap text */
 article .tweet-text {
   padding-top: 10px;
   margin-left: 12px;
