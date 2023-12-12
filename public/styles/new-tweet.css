@@ -1,6 +1,3 @@
-/* ToDO
-check the requirement for font weight for textarea input
-*/
 main .new-tweet {
   padding: 20px;
 }
@@ -9,14 +6,11 @@ main .new-tweet {
   padding-top: 10px;
   background-color: #f4f1ec;
   height: 58px;
-  border-top: 0cm;
-  border-left: 0cm;
-  border-right: 0cm;
-  border-width: 5px;
-  border-color: #535149;
+  border: 0px solid transparent;
+  border-bottom: 5px solid #535149;  
   outline: none;
   font-family: 'Source Sans 3', sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   resize: none;
 }
 
@@ -55,19 +49,15 @@ main .new-tweet .box-2 .counter {
 
 .error-message p {
   font-size: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
 }
 
 #overlimit-error {
   display: flex;
   justify-content: flex-start;
   margin-top: 20px;
-  padding: 10px;
-  padding-left: 20px;
-  border-style: solid;
-  border-color: red;
-  border-width: medium;
+  padding: 10px 10px 10px 20px;
+  border: medium solid red;
   color: red;
 }
 
@@ -75,10 +65,7 @@ main .new-tweet .box-2 .counter {
   display: flex;
   justify-content: flex-start;
   margin-top: 20px;
-  padding: 10px;
-  padding-left: 20px;
-  border-style: solid;
-  border-color: red;
-  border-width: medium;
+  padding: 10px 10px 10px 20px;
+  border: medium solid red;
   color: red;
 }
