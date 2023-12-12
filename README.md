@@ -27,9 +27,9 @@ This web application showcases a combination of front-end skills using HTML, CSS
   - Node.js and Express manage tweet submissions and data retrieval.
 
 ## Final product
-!["desktop"](./public/images/tweeterDesktop.png)
-!["desktop"](./public/images/tweetertablet.png)
-!["desktop"](./public/images/tweeterPhone.png)
+!["desktop"](./public/images/tweeterL.png)
+!["desktop"](./public/images/tweeterM.png)
+!["desktop"](./public/images/tweeterS.png)
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
