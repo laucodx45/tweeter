@@ -9,5 +9,9 @@ $(document).ready(function() {
     if (remaining < 0) {
       $(this).parents('.new-tweet').find('.counter').css('color', 'red');
     }
+
+    if (remaining > 0) {
+      $(this).parents('.new-tweet').find('.counter').css('color', '#535149');
+    }
   });
 });
