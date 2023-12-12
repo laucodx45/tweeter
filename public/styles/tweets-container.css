@@ -2,8 +2,7 @@ article {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  border-style: solid;
-  border-width: thick;
+  border: solid thick;
   font-family: 'Source Sans 3', sans-serif;
   font-weight: 300;
 }
@@ -21,31 +20,24 @@ article .user-info {
 article .avatar img {
   max-width: 54px;
   border-radius: 30%;
-  margin-left: 30px;
-  margin-top: 15px;
+  margin: 15px 0 0 30px;
 }
 
 article .user-name {
-  padding-left: 15px;
-  padding-top: 40px;
+  padding: 40px 0 0 15px;
 }
 
 article .user-tag {
-  padding-top: 40px;
-  padding-right: 10px;
+  padding: 40px 10px 0;
   color: #C5CBE3;
   font-weight: 300;
 }
 /* wrap text */
 article .tweet-text {
   padding-top: 10px;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin: 0 12px 0 12px;
   background-color: #f4f1ec;
-  border-style: solid;
-  border-left-style: hidden;
-  border-right-style: hidden;
-  border-top-style: hidden;
+  border-style: hidden hidden solid hidden;
   border-width: 5px;
   font-family: 'Source Sans 3', sans-serif;
   font-weight: 600;
@@ -53,9 +45,7 @@ article .tweet-text {
 
 article .tweet-text p {
   margin: 15px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px 20px 10px;
 }
 
 article footer {
@@ -66,14 +56,14 @@ article footer {
 }
 
 article footer .posting-date {
-  padding-left: 15px;
-  padding-top: 3px;
+  padding: 3px 0 0 15px;
   font-size: medium;
 }
 
 article footer .icons {
   padding-top: 3px;
   padding-right: 15px;
+  padding: 3px 15px 0;
   font-size: 15px;
   cursor: pointer;
 }
@@ -83,22 +73,15 @@ article footer .icons {
 }
 
 #retweet {
-  padding-left : 5px;
-  padding-right : 5px;
+  padding: 0 5px 0 5px;
 }
 
 article:hover {
   box-shadow: 10px 10px lightblue;
 }
 
-#flag:hover {
-  color: red;
-}
-
-#retweet:hover {
-  color: red;
-}
-
+#flag:hover,
+#retweet:hover,
 #heart:hover {
   color: red;
 }
