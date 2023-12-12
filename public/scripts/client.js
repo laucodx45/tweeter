@@ -1,6 +1,3 @@
-// TODO:
-// 1. There's a bug with the counter, after tweeting, it stays at the word count of the previous tweet
-
 const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
