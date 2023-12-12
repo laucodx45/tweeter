@@ -9,8 +9,7 @@ nav {
 
 nav span.left{
   color: #FFFFFF;
-  margin-left: 1.5em;
-  margin-top: 1em;
+  margin: 1em 0 0 1.5em;
   font-size: 2em;
   font-family: 'Bungee', sans-serif;
 }
@@ -19,13 +18,16 @@ nav p {
   margin-bottom: 0px;
 }
 
+nav span .nav-em {
+  font-weight: 600;
+}
+
 nav span.right {
   display: flex;
   flex-direction: column;
   align-self: end;
   color: #FFFFFF;
-  margin-right: 1.5em;
-  margin-bottom: 18px;
+  margin: 0 1.5em 1em 0;
   font-family: 'Source Sans 3', sans-serif;
 }
 
