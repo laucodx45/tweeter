@@ -2,8 +2,34 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+This web application showcases a combination of front-end skills using HTML, CSS, JS, jQuery, and AJAX, along with back-end skills utilizing Node.js and Express. Tweeter provides users with a simple platform to share their thoughts, commonly known as "tweets."
 
+## Features
+- User-Friendly Interface
+  - Effortlessly compose and submit tweets with a seamless interface.
+
+- Asynchronous Communication
+  - AJAX for responsive, real-time server communication.
+
+- Dynamic Content Updates 
+  - jQuery enables instant HTML updates without page reloads.
+
+- Error Handling 
+  - Clear error messages prevent invalid tweets, enhancing user experience.
+
+- Dynamic Character Counter 
+  - Live update on remaining characters for tweet composition.
+
+- Responsive Web Design 
+  - Consistent and optimal user experience across devices.
+
+- Server-Side Handling 
+  - Node.js and Express manage tweet submissions and data retrieval.
+
+## Final product
+!["desktop"](./public/images/tweeterDesktop.png)
+!["desktop"](./public/images/tweetertablet.png)
+!["desktop"](./public/images/tweeterPhone.png)
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
@@ -16,3 +42,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- body-parser
+- chance
+- md5
