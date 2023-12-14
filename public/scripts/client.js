@@ -43,15 +43,15 @@ const createTweetElement = (object) => {
 const renderTweets = (array) => {
 
   // check if it's a new tweet object
-  if (!Array.isArray(array)) {
-    const tweetData = array;
-    $('#tweets-container').after(createTweetElement(tweetData));
-    return;
-  }
-
+  // if (!Array.isArray(array)) {
+  //   const tweetData = array;
+  //   $('#tweets-container').prepend(createTweetElement(tweetData));
+  //   return;
+  // }
+  $('#tweets-container').empty();
   // This renders the entire tweets database
   for (const tweetData of array) {
-    $('#tweets-container').after(createTweetElement(tweetData));
+    $('#tweets-container').prepend(createTweetElement(tweetData));
   }
 };
 
@@ -61,12 +61,12 @@ const loadTweet = () => {
   });
 };
 
-const loadNewTweet = () => {
-  $.getJSON("/tweets", function(data) {
-    const lastIndex  = data.length - 1;
-    renderTweets(data[lastIndex]);
-  });
-};
+// const loadNewTweet = () => {
+//   $.getJSON("/tweets", function(data) {
+//     const lastIndex  = data.length - 1;
+//     renderTweets(data[lastIndex]);
+//   });
+// };
 
 $(document).ready(function() {
   $('.error-message').hide();
@@ -81,13 +81,11 @@ $(document).ready(function() {
     const slicedTweet = decodeURIComponent($tweet.slice(5));
     
     if (slicedTweet.length === 0 || slicedTweet === null) {
-      // alert('Tweet content is not present');
       $(this).parents('.container').find('#empty-tweet-error').show(200);
       return;
     }
     
     if (slicedTweet.length > 140) {
-      // alert('Please limit tweet to 140 characters');
       $(this).parents('.container').find('#overlimit-error').show(200);
       return;
     }
@@ -98,7 +96,7 @@ $(document).ready(function() {
       $("#tweet-text").val('');
       $('.counter').text(140);
       // $(this).find('.counter').text(140);
-      loadNewTweet();
+      loadTweet();
     });
     
   });
