@@ -69,3 +69,9 @@ main .new-tweet .box-2 .counter {
   border: medium solid red;
   color: red;
 }
+
+@media only screen and (max-width: 404px) {
+  .new-tweet .box-1 textarea {
+    height: fit-content;
+  }
+}
