@@ -41,15 +41,7 @@ const createTweetElement = (object) => {
 };
 
 const renderTweets = (array) => {
-
-  // check if it's a new tweet object
-  // if (!Array.isArray(array)) {
-  //   const tweetData = array;
-  //   $('#tweets-container').prepend(createTweetElement(tweetData));
-  //   return;
-  // }
   $('#tweets-container').empty();
-  // This renders the entire tweets database
   for (const tweetData of array) {
     $('#tweets-container').prepend(createTweetElement(tweetData));
   }
@@ -60,13 +52,6 @@ const loadTweet = () => {
     renderTweets(data);
   });
 };
-
-// const loadNewTweet = () => {
-//   $.getJSON("/tweets", function(data) {
-//     const lastIndex  = data.length - 1;
-//     renderTweets(data[lastIndex]);
-//   });
-// };
 
 $(document).ready(function() {
   $('.error-message').hide();
@@ -91,11 +76,8 @@ $(document).ready(function() {
     }
 
     $.post("/tweets", $tweet).then(function() {
-      // is this bad practice, not using .find?
-
       $("#tweet-text").val('');
       $('.counter').text(140);
-      // $(this).find('.counter').text(140);
       loadTweet();
     });
     
