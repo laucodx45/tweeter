@@ -1,3 +1,4 @@
+// prevent cross site scripting
 const escape = function(str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -5,7 +6,7 @@ const escape = function(str) {
 };
 
 /**
- * takes in a tweet object and is responsible for returning a tweet <article> element containing the entire HTML structure of the tweet
+ * createTweetElement takes in a tweet object and is responsible for returning a tweet <article> element containing the entire HTML structure of the tweet
  * @param {*} object
  * @output returns entire HTML structure of the tweet
  */
@@ -41,6 +42,7 @@ const createTweetElement = (object) => {
 };
 
 const renderTweets = (array) => {
+  // empty container everytime it renders to prevent duplication
   $('#tweets-container').empty();
   for (const tweetData of array) {
     $('#tweets-container').prepend(createTweetElement(tweetData));
@@ -60,9 +62,11 @@ $(document).ready(function() {
 
   $("#submit-tweet-form").on("submit", function(event) {
     event.preventDefault();
+    // slideUp clears the error message if there was any, it ensures that the error message is relevant to the most current submit
     $('.error-message').slideUp(200);
     const $tweet = $(this).serialize();
 
+    // it leaves us with the lenght of the tweet
     const slicedTweet = decodeURIComponent($tweet.slice(5));
     
     if (slicedTweet.length === 0 || slicedTweet === null) {
