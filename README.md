@@ -27,10 +27,10 @@ This web application implements a combination of front-end skills such as using 
   - Node.js and Express manage tweet submissions and data retrieval.
 
 ## Final product
-!["desktop"](./public/images/tweeterL.png)
-!["desktop"](./public/images/tweeterM.png)
-!["desktop"](./public/images/tweeterS.png)
-!["desktop"](./public/images/tweeterXs.png)
+!["Default version"](https://github.com/laucodx45/tweeter/blob/master/public/images/tweeterL.png?raw=true)
+!["desktop version"](https://github.com/laucodx45/tweeter/blob/master/public/images/tweeterM.png?raw=true)
+!["Tablet version"](https://github.com/laucodx45/tweeter/blob/master/public/images/tweeterS.png?raw=true)
+!["SmartPhone version"](https://github.com/laucodx45/tweeter/blob/master/public/images/tweeterXs.png?raw=true)
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
