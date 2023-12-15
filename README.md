@@ -1,8 +1,8 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a simple, single-page Twitter clone. Tweeter provides users with a simple platform to share their thoughts, commonly known as "tweets."
 
-This web application showcases a combination of front-end skills using HTML, CSS, JS, jQuery, and AJAX, along with back-end skills utilizing Node.js and Express. Tweeter provides users with a simple platform to share their thoughts, commonly known as "tweets."
+This web application implements a combination of front-end skills such as using HTML, CSS, JS, jQuery, and AJAX, along with back-end skills utilizing Node.js and Express. 
 
 ## Features
 - User-Friendly Interface
@@ -30,6 +30,7 @@ This web application showcases a combination of front-end skills using HTML, CSS
 !["desktop"](./public/images/tweeterL.png)
 !["desktop"](./public/images/tweeterM.png)
 !["desktop"](./public/images/tweeterS.png)
+!["desktop"](./public/images/tweeterXs.png)
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
