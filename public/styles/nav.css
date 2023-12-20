@@ -6,29 +6,25 @@ nav {
   position: fixed;
   width: 100%;
 }
-
-nav span.left{
+nav span.left {
   color: #FFFFFF;
   margin: 1em 0 0 1.5em;
   font-size: 2em;
-  font-family: 'Bungee', sans-serif;
+  font-family: "Bungee", sans-serif;
 }
-  
-nav p {
-  margin-bottom: 0px;
-}
-
-nav span .nav-em {
-  font-weight: 600;
-}
-
 nav span.right {
   display: flex;
   flex-direction: column;
   align-self: end;
   color: #FFFFFF;
   margin: 0 1.5em 1em 0;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+}
+nav p {
+  margin-bottom: 0px;
+}
+nav span .nav-em {
+  font-weight: 600;
 }
 
 #arrow {
@@ -40,24 +36,20 @@ nav span.right {
 @media only screen and (max-width: 768px) {
   nav {
     background-color: transparent;
-    position:absolute;
+    position: absolute;
   }
-
-  nav span.left{
+  nav span.left {
     padding-right: 10%;
   }
-
   nav span.right {
     font-size: 24px;
   }
 }
-
 @media only screen and (max-width: 575px) {
-  nav span.left{
+  nav span.left {
     font-size: 34px;
     margin: 44px 0 0 35px;
   }
-
   nav span.right {
     font-size: 18px;
     margin: 0 35px 36px 0;

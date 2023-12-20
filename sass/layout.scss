@@ -3,10 +3,11 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
+@import './variables.scss';
+
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,18 +15,20 @@ html {
 /*
  * Global layout stuff
  */
+ 
 nav {
-  font-family: "Bungee", sans-serif;
+  font-family: $font1;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #535149;
-  background-color: #f4f1ec;
+  color: $tweets-font-color;
+  background-color: $main-background-color;
   font-size: 24px;
-  font-family: "Source Sans 3", sans-serif;
+  font-family: $font2;
+  
 }
 
 main {
@@ -33,7 +36,7 @@ main {
   flex-direction: column;
   align-self: center;
   width: 100%;
-  background-color: #f4f1ec;
+  background-color: $main-background-color;
 }
 
 .all-tweets {
@@ -47,6 +50,7 @@ main {
     display: flex;
     flex-direction: row;
   }
+
   main .all-tweets {
     margin: 22vh 5vh 5vh 15vh;
   }

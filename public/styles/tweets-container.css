@@ -3,63 +3,54 @@ article {
   flex-direction: column;
   margin-top: 40px;
   border: solid thick;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   font-weight: 300;
 }
-
 article .box-1 {
   display: flex;
   justify-content: space-between;
 }
-
 article .user-info {
   display: flex;
   flex-direction: row;
 }
-
 article .avatar img {
   max-width: 54px;
   border-radius: 30%;
   margin: 15px 0 0 30px;
 }
-
 article .user-name {
   padding: 40px 0 0 15px;
 }
-
 article .user-tag {
   padding: 40px 10px 0;
   color: #C5CBE3;
   font-weight: 300;
 }
-/* wrap text */
 article .tweet-text {
   padding-top: 10px;
   margin: 0 12px 0 12px;
   background-color: #f4f1ec;
   border-style: hidden hidden solid hidden;
   border-width: 5px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   font-weight: 600;
 }
-
 article .tweet-text p {
   margin: 15px;
   padding: 0 10px 20px 10px;
+  word-break: break-all;
 }
-
 article footer {
   display: flex;
   justify-content: space-between;
   margin: 10px;
   padding: 10px;
 }
-
 article footer .posting-date {
   padding: 3px 0 0 15px;
   font-size: medium;
 }
-
 article footer .icons {
   padding-top: 3px;
   padding-right: 15px;
@@ -69,7 +60,7 @@ article footer .icons {
 }
 
 #flag {
-  padding-right : 5px;
+  padding-right: 5px;
 }
 
 #retweet {

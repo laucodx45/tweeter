@@ -1,0 +1,69 @@
+@import './variables.scss';
+
+nav {
+  display: flex;
+  background-color: #4056A1;
+  height: 120px;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+
+  span.left{
+    color: #FFFFFF;
+    margin: 1em 0 0 1.5em;
+    font-size: 2em;
+    font-family: $font1;
+  }
+
+  span.right {
+    display: flex;
+    flex-direction: column;
+    align-self: end;
+    color: #FFFFFF;
+    margin: 0 1.5em 1em 0;
+    font-family: $font2;
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  span .nav-em {
+    font-weight: 600;
+  }
+}
+
+#arrow {
+  display: flex;
+  align-self: center;
+  color: red;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: transparent;
+    position:absolute;
+
+    span.left{
+      padding-right: 10%;
+    }
+    
+    span.right {
+      font-size: 24px;
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  nav {
+    span.left{
+      font-size: 34px;
+      margin: 44px 0 0 35px;
+    }
+
+    span.right {
+      font-size: 18px;
+      margin: 0 35px 36px 0;
+    }
+  }
+}

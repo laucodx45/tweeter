@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 header {
   display: flex;
   flex-direction: column;
@@ -6,20 +8,23 @@ header {
   width: 100%;
   padding-top: 192px;
   background-image: url(/images/arches.png);
-}
-header .avatar {
-  display: flex;
-  justify-content: center;
-}
-header .user {
-  display: flex;
-  justify-content: center;
-}
-header .user p {
-  margin: 10px;
-  color: #f4f1ec;
-  font-size: 30px;
-  font-weight: bold;
+
+  .avatar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .user {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .user p {
+    margin: 10px;
+    color: $main-background-color;
+    font-size: 30px;
+    font-weight: bold;
+  }
 }
 
 @media only screen and (min-width: 1024px) {

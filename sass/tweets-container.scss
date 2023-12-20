@@ -1,0 +1,90 @@
+@import './variables.scss';
+
+article {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  border: solid thick;
+  font-family: $font2;
+  font-weight: 300;
+
+  .box-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .avatar img {
+    max-width: 54px;
+    border-radius: 30%;
+    margin: 15px 0 0 30px;
+  }
+
+  .user-name {
+    padding: 40px 0 0 15px;
+  }
+
+  .user-tag {
+    padding: 40px 10px 0;
+    color: #C5CBE3;
+    font-weight: 300;
+  }
+
+  .tweet-text {
+    padding-top: 10px;
+    margin: 0 12px 0 12px;
+    background-color: $main-background-color;
+    border-style: hidden hidden solid hidden;
+    border-width: 5px;
+    font-family: $font2;
+    font-weight: 600;
+  }
+
+  .tweet-text p {
+    margin: 15px;
+    padding: 0 10px 20px 10px;
+    word-break: break-all;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+
+    .posting-date {
+      padding: 3px 0 0 15px;
+      font-size: medium;
+    }
+
+    .icons {
+      padding-top: 3px;
+      padding-right: 15px;
+      padding: 3px 15px 0;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+#flag {
+  padding-right : 5px;
+}
+
+#retweet {
+  padding: 0 5px 0 5px;
+}
+
+article:hover {
+  box-shadow: 10px 10px lightblue;
+}
+
+#flag:hover,
+#retweet:hover,
+#heart:hover {
+  color: red;
+}
